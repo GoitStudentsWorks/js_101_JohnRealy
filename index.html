@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_1/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
+    <title>Portfolio</title>
+    <script type="module" crossorigin src="/js_1/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_1/assets/vendor-09312bac.js">
+    <link rel="stylesheet" href="/js_1/assets/vendor-2715ca0a.css">
+    <link rel="stylesheet" href="/js_1/assets/index-471c9f87.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <!-- logo -->
+    <div class="logo-container">
+      <a href="#" class="logo-link">
+        <div class="logo-image">
+          <img
+            src="/js_1/assets/logo-bd135bcd.png"
+            alt="Site Logo"
+            width="80px"
+            height="80px"
+          />
+        </div>
+        <p class="logo-text">jefferson*</p>
+      </a>
+    </div>
+    <button id="main-modal-menu-open" class="menu-btn" hidden>Menu</button>
+    <!-- order button (tablet and desktop) -->
+    <button class="order-btn" hidden>
+      <a href="#footer" class="order-btn-text">Order the project</a>
+    </button>
+
+    <!-- button burger (mobile) -->
+    <button
+      class="burger-btn"
+      id="mobile-menu-open"
+      aria-label="Mobile Menu Open"
+    >
+      <svg class="burger-btn-svg" height="28" width="28">
+        <use href="/js_1/assets/icons-8df51d6d.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <!-- mobile-modal-menu -->
+
+    <div id="mobile-menu-id" class="mobile-menu">
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close-btn"
+        aria-label="Mobile Menu Close"
+      >
+        <svg class="icon-close" height="28" width="28">
+          <use href="/js_1/assets/icons-8df51d6d.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav-list">
+          <li>
+            <a class="mobile-menu-nav-list-item" href="#about-me">About me</a>
+          </li>
+          <li>
+            <a class="mobile-menu-nav-list-item" href="#benefits">Benefits</a>
+          </li>
+          <li>
+            <a class="mobile-menu-nav-list-item" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="mobile-menu-nav-list-item" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="order-btn2">
+        <a href="#footer" class="order-btn-text">Order the project</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- tablet+desktop-modal-menu -->
+  <div id="main-modal-menu-id" class="main-modal-menu">
+    <nav class="main-modal-nav">
+      <ul class="main-modal-list">
+        <li>
+          <a class="main-modal-list-item" href="#about-me">About me</a>
+        </li>
+        <li>
+          <a class="main-modal-list-item" href="#benefits">Benefits</a>
+        </li>
+        <li>
+          <a class="main-modal-list-item" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-modal-list-item" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="section hero">
+  <div class="hero-background">
+    <div class="container hero-container">
+      <h1 class="hero-text">
+        Hello.
+        <br />I’m Fullstack developer Lloyd Jefferson.
+      </h1>
+      <ul class="hero-social">
+        <li class="hero-soc-item">
+          <a class="hero-soc-link" href="#">IG</a>
+        </li>
+        <li class="hero-soc-item">
+          <a class="hero-soc-link" href="#">FB</a>
+        </li>
+        <li class="hero-soc-item">
+          <a class="hero-soc-link" href="#">YT</a>
+        </li>
+        <li class="hero-soc-item">
+          <a class="hero-soc-link" href="#">GH</a>
+        </li>
+        <li class="hero-soc-item-email">
+          <a
+            class="hero-soc-link hero-soc-email"
+            href="email:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+      </ul>
+      <div></div>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-me-section" id="about-me">
+  <div class="container about-me-container">
+    <div class="abm-info-sec">
+      <ul class="abm-info-sec-list">
+        <li class="abm-info-sec-el">
+          <div class="abm-title-container">
+            <h3 class="abm-title">
+              I work with people all over the world to create impressive and
+              <span class="title-accent-red">functional</span>
+              <span class="title-accent-gray">websites</span> that reflect each
+              client's unique personality.
+            </h3>
+          </div>
+        </li>
+        <li class="abm-info-sec-el">
+          <!-- <div class="abm-photo-cont"> -->
+          <img
+            class="abm-photo"
+            srcset="/js_1/assets/abm-8f00eeb0.jpeg 1x, /js_1/assets/abm@2x-b1817d54.jpeg 2x"
+            src="/js_1/assets/abm-8f00eeb0.jpeg"
+            alt="My photo"
+            width="343"
+            height="500"
+          />
+          <!-- </div> -->
+        </li>
+      </ul>
+    </div>
+    <!-- Accordion -->
+    <div class="accordion-about-container">
+      <div class="ac ac-about">
+        <h2 class="ac-header ac-header-about">
+          <button type="button" class="ac-btn ac-btn-about">
+            About Me
+            <button
+              class="arrow-btn ac-trigger arrow-btn-about ac-trigger-about"
+            >
+              <svg class="arrow-acc arrow-acc-about" width="18" height="18">
+                <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </button>
+        </h2>
+        <div class="ac-panel ac-panel-about">
+          <ul class="ac-panel-list ac-panel-list-about">
+            <li class="ac-panel-el ac-panel-el-about">
+              <p class="ac-text ac-text-about">
+                I am Lloyd Jefferson, a talented programmer with extensive
+                expertise in software development. I have an understanding of
+                different programming languages and technologies, always ready
+                to improve my skills. I always follow the latest trends and look
+                for unconventional, creative solutions to problems. I have a
+                high level of analytical skills and am able to effectively solve
+                even the most difficult tasks encountered on the way.
+              </p>
+            </li>
+            <li class="ac-panel-el ac-panel-el-about">
+              <p class="ac-text ac-text-about">
+                Able to work both independently and in a team. I can effectively
+                cooperate with colleagues, exchanging ideas and finding optimal
+                solutions. Professional maturity allows you to calmly cope with
+                challenges and stressful situations, while maintaining a high
+                quality of work.I am always looking for opportunities for
+                self-improvement. I actively study new technologies and
+                practices to stay abreast of the latest innovations. I have a
+                strong understanding of various programming languages,
+                frameworks and architectural concepts that allow me to create
+                efficient and scalable software.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ac ac-about">
+        <h2 class="ac-header ac-header-about">
+          <button type="button" class="ac-btn ac-btn-about">
+            Role<button class="arrow-btn ac-trigger arrow-btn-about">
+              <svg class="arrow-acc arrow-acc-about" width="18" height="18">
+                <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </button>
+        </h2>
+        <div class="ac-panel ac-panel-about">
+          <ul class="ac-panel-list ac-panel-list-about">
+            <li class="ac-panel-el ac-panel-el-about">
+              <p class="ac-text ac-text-about">Frontend development</p>
+            </li>
+            <li class="ac-panel-el ac-panel-el-about">
+              <p class="ac-text ac-text-about">HeadlessCMS,Wordpress</p>
+            </li>
+            <li class="ac-panel-el ac-panel-el-about">
+              <p class="ac-text ac-text-about">Blender(enjoy)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ac ac-about">
+        <h2 class="ac-header ac-header-about">
+          <button type="button" class="ac-btn ac-btn-about">
+            Education
+            <button class="arrow-btn ac-trigger arrow-btn-about">
+              <svg class="arrow-acc arrow-acc-about" width="18" height="18">
+                <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </button>
+        </h2>
+        <div class="ac-panel ac-panel-about">
+          <ul class="ac-panel-list ac-panel-list-about">
+            <li class="ac-panel-el ac-panel-el-about">
+              <p class="ac-text ac-text-about">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </p>
+            </li>
+            <li class="ac-panel-el ac-panel-el-about">
+              <p class="ac-text ac-text-about">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </p>
+            </li>
+            <li class="ac-panel-el ac-panel-el-about">
+              <p class="ac-text ac-text-about">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- swiper -->
+    <div class="swiper swiper-about">
+  <ul class="swiper-wrapper swiper-wrapper-about">
+    <li class="swiper-slide swiper-slide-about active active-slide-about"><p class="swiper-text">HTML/CSS</p></li>
+    <li class="swiper-slide swiper-slide-about"><p class="swiper-text">JavaScript</p></li>
+    <li class="swiper-slide swiper-slide-about"><p class="swiper-text">React</p></li>
+    <li class="swiper-slide swiper-slide-about"><p class="swiper-text">Node. js</p></li>
+    <li class="swiper-slide swiper-slide-about"><p class="swiper-text">React Native</p></li>
+    <li class="swiper-slide swiper-slide-about"><p class="swiper-text">Soft skills</p></li>
+  </ul>
+<button class="swiper-button-next swiper-button-next-about ">
+  <svg class="arrow-swiper-about" width="18" height="18">
+  <use href="/js_1/assets/icons-8df51d6d.svg#icon-arrow-right"></use></svg>
+</button>
+  </div>
+</section>
+
+      <section class="section benefits" id="benefits">
+  <div class="container benefits-wrapper">
+    <div class="benef-title-box">
+      <h3 class="benefits-title">Benefits of working with me</h3>
+      <div class="benef-list-link-box">
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <div class="benefit-icon-box">
+              <svg
+                class="icon-benefit"
+                width="24"
+                height="24"
+                aria-label="icon user"
+              >
+                <use href="/js_1/assets/icons-8df51d6d.svg#icon-men"></use>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Expertise</h3>
+            <p class="benefit-text">
+              As a highly experienced developer, I have deep knowledge of
+              programming and website development.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <div class="benefit-icon-box">
+              <svg
+                class="icon-benefit"
+                width="24"
+                height="24"
+                aria-label="icon chat"
+              >
+                <use href="/js_1/assets/icons-8df51d6d.svg#icon-chat"></use>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Communication</h3>
+            <p class="benefit-text">
+              Understanding your needs and wants is my priority and I am always
+              open to discussions and corrections.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <div class="benefit-icon-box">
+              <svg
+                class="icon-benefit"
+                width="24"
+                height="24"
+                aria-label="icon pen"
+              >
+                <use href="/js_1/assets/icons-8df51d6d.svg#icon-brush"></use>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Art</h3>
+            <p class="benefit-text">
+              Thanks to my creative nature, I am ready to accept challenges and
+              help you bring your ideas to life.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <div class="benefit-icon-box">
+              <svg
+                class="icon-benefit"
+                width="24"
+                height="24"
+                aria-label="icon time"
+              >
+                <use href="/js_1/assets/icons-8df51d6d.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Urgent execution</h3>
+            <p class="benefit-text">
+              I understand how important time is to you. Ready to work quickly
+              and efficiently, without reducing the quality of work.
+            </p>
+          </li>
+        </ul>
+        <a class="benefit-link" href="#work-together-section"
+          >Order the project</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="projects-section" id="projects">
+  <div class="container">
+    <h2 class="projects–title">Projects</h2>
+    <div class="swiper mySwiper">
+      <ul class="projects-list swiper-wrapper">
+        <li class="projects-item swiper-slide">
+          <div class="projects-info-wrapper">
+            <div class="projects-skills">
+              <div class="projects-skill">
+                <p>#react</p>
+              </div>
+              <div class="projects-skill">
+                <p>#js</p>
+              </div>
+              <div class="projects-skill">
+                <p>#node js</p>
+              </div>
+              <div class="projects-skill">
+                <p>#git</p>
+              </div>
+            </div>
+            <h3>
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="projects-link"
+              href="https://github.com/JohnRealy/project-group-12"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="projects-img-wrapper">
+            <picture>
+              <source
+                srcset="/js_1/assets/1-d-c98dd873.png 1x, /js_1/assets/1-d@2x-73da4503.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/js_1/assets/1-ad5d1fe3.png 1x, /js_1/assets/1@2x-54ba98dd.png 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="projects-img"
+                src="/js_1/assets/1-ad5d1fe3.png"
+                alt="Read journey project image"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="projects-item swiper-slide">
+          <div class="projects-info-wrapper">
+            <div class="projects-skills">
+              <div class="projects-skill">
+                <p>#react</p>
+              </div>
+              <div class="projects-skill">
+                <p>#js</p>
+              </div>
+              <div class="projects-skill">
+                <p>#node js</p>
+              </div>
+              <div class="projects-skill">
+                <p>#git</p>
+              </div>
+            </div>
+            <h3>
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="projects-link"
+              href="https://github.com/JohnRealy/project-group-12"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="projects-img-wrapper">
+            <picture>
+              <source
+                srcset="/js_1/assets/2-d-893dd737.png 1x, /js_1/assets/2-d@2x-eca748ea.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/js_1/assets/2-74213fc9.png 1x, /js_1/assets/2@2x-8641882b.png 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="projects-img"
+                src="/js_1/assets/2-74213fc9.png"
+                alt="Petlove project image"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="projects-item swiper-slide">
+          <div class="projects-info-wrapper">
+            <div class="projects-skills">
+              <div class="projects-skill">
+                <p>#react</p>
+              </div>
+              <div class="projects-skill">
+                <p>#js</p>
+              </div>
+              <div class="projects-skill">
+                <p>#node js</p>
+              </div>
+              <div class="projects-skill">
+                <p>#git</p>
+              </div>
+            </div>
+            <h3>
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="projects-link"
+              href="https://github.com/JohnRealy/project-group-12"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="projects-img-wrapper">
+            <picture>
+              <source
+                srcset="/js_1/assets/3-d-c68d0b84.png 1x, /js_1/assets/3-d@2x-fc738ece.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/js_1/assets/3-5b12c05b.png 1x, /js_1/assets/3@2x-7e635310.png 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="projects-img"
+                src="/js_1/assets/3-5b12c05b.png"
+                alt="VocabBuilder project image"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <div class="projects-btn-container">
+        <button class="projects-prev-btn" type="button">
+          <svg
+            class="projects-arrow-left-icon"
+            width="24"
+            height="24"
+            aria-label="arrow left"
+          >
+            <use href="/js_1/assets/icons-8df51d6d.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="projects-next-btn" type="button">
+          <svg
+            class="projects-arrow-right-icon"
+            width="24"
+            height="24"
+            aria-label="arrow right"
+          >
+            <use href="/js_1/assets/icons-8df51d6d.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="faq">
+  <div class="container faq-container">
+    <h2 class="faq-section-title">FAQ</h2>
+
+    <ul class="accordion-container accordion-faq-container faq-list">
+      <li class="faq-list-item ac">
+        <div class="faq-content">
+          <div class="ac-content">
+            <h3 class="ac-header faq-header">
+              What programming languages are most often used in your project?
+              <button type="button" class="ac-trigger faq-button">
+                <svg class="faq-button-svg" width="20" height="20">
+                  <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="ac-panel faq-panel">
+            <p class="ac-text faq-text">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-list-item ac">
+        <div class="faq-content">
+          <div class="ac-content">
+            <h3 class="ac-header faq-header">
+              What are the deadlines for the project?
+              <button type="button" class="ac-trigger faq-button">
+                <svg class="faq-button-svg" width="20" height="20">
+                  <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="ac-panel faq-panel">
+            <p class="ac-text faq-text">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-list-item ac">
+        <div class="faq-content">
+          <div class="ac-content">
+            <h3 class="ac-header faq-header">
+              What payment methods do you accept?
+              <button type="button" class="ac-trigger faq-button">
+                <svg class="faq-button-svg" width="20" height="20">
+                  <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="ac-panel faq-panel">
+            <p class="ac-text faq-text">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-list-item ac">
+        <div class="faq-content">
+          <div class="ac-content">
+            <h3 class="ac-header faq-header">
+              How can I contact you?
+              <button type="button" class="ac-trigger faq-button">
+                <svg class="faq-button-svg" width="20" height="20">
+                  <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="ac-panel faq-panel">
+            <p class="ac-text faq-text">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-list-item ac">
+        <div class="faq-content">
+          <div class="ac-content">
+            <h3 class="ac-header faq-header">
+              Do you provide advice or support?
+              <button type="button" class="ac-trigger faq-button">
+                <svg class="faq-button-svg" width="20" height="20">
+                  <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="ac-panel faq-panel">
+            <p class="ac-text faq-text">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-list-item ac">
+        <div class="faq-content">
+          <div class="ac-content">
+            <h3 class="ac-header faq-header">
+              What does the process of developing a software product look like
+              from idea to implementation?
+              <button type="button" class="ac-trigger faq-button">
+                <svg class="faq-button-svg" width="20" height="20">
+                  <use href="/js_1/assets/icons-8df51d6d.svg#arrow-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="ac-panel faq-panel">
+            <p class="ac-text faq-text">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section-covers section">
+  <div class="container-covers">
+    <h2 class="titlle-covers">Covers</h2>
+    <div class="content-covers">
+      <ul class="marquee">
+        <li class="marquee__inner">
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/make-up-fbcb2be5.jpg 1x, /js_1/assets/make-up-2x-17941236.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/make-up-fbcb2be5.jpg 1x, /js_1/assets/make-up-2x-17941236.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/make-up-fbcb2be5.jpg"
+                alt="cover-make-up"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/transforming-your-body-2d59559c.jpg 1x, /js_1/assets/transforming-your-body-2d59559c.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/transforming-your-body-2d59559c.jpg 1x, /js_1/assets/transforming-your-body-2d59559c.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/transforming-your-body-2d59559c.jpg"
+                alt="cover-transforming-your-body"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/mimino-4a93c44d.jpg 1x, /js_1/assets/mimino-2x-32e1b76a.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/mimino-4a93c44d.jpg 1x, /js_1/assets/mimino-2x-32e1b76a.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/mimino-4a93c44d.jpg"
+                alt="cover-mimino"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/finances-masterfully-5806bd02.jpg 1x, /js_1/assets/finances-masterfully-2x-b135cb40.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/finances-masterfully-5806bd02.jpg 1x, /js_1/assets/finances-masterfully-2x-b135cb40.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/finances-masterfully-5806bd02.jpg"
+                alt="cover-finances-masterfully"
+                width="282"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="marquee__inner">
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/turn-your-bisiness-690dd13b.jpg 1x, /js_1/assets/turn-your-bisiness-2x-11132803.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/turn-your-bisiness-690dd13b.jpg 1x, /js_1/assets/turn-your-bisiness-2x-11132803.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/turn-your-bisiness-690dd13b.jpg"
+                alt="cover-turn-your-bisiness"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/traditional-ukrainian-artistry-3183c7ab.jpg 1x, /js_1/assets/traditional-ukrainian-artistry-2x-028b95ab.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/traditional-ukrainian-artistry-3183c7ab.jpg 1x, /js_1/assets/traditional-ukrainian-artistry-2x-028b95ab.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/traditional-ukrainian-artistry-3183c7ab.jpg"
+                alt="cover-traditional-ukrainian-artistry"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/organic-vegetables-a6f8a2bb.jpg 1x, /js_1/assets/organic-vegetables-2x-b67a095e.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/organic-vegetables-a6f8a2bb.jpg 1x, /js_1/assets/organic-vegetables-2x-b67a095e.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/organic-vegetables-a6f8a2bb.jpg"
+                alt="cover-organic-vegetables"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/stay-healthy-1dd075ef.jpg 1x, /js_1/assets/stay-healthy-2x-0b723d78.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/stay-healthy-1dd075ef.jpg 1x, /js_1/assets/stay-healthy-2x-0b723d78.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/stay-healthy-1dd075ef.jpg"
+                alt="cover-stay-healthy"
+                width="282"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="marquee__inner">
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/fresh-box-3666c205.jpg 1x, /js_1/assets/fresh-box-2x-5983be8c.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/fresh-box-3666c205.jpg 1x, /js_1/assets/fresh-box-2x-5983be8c.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/fresh-box-3666c205.jpg"
+                alt="cover-fresh-box"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/learning-english-2774939d.jpg 1x, /js_1/assets/learning-english-2x-f0346518.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/learning-english-2774939d.jpg 1x, /js_1/assets/learning-english-2x-f0346518.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/learning-english-2774939d.jpg"
+                alt="cover-learning-english"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/make-up-fbcb2be5.jpg 1x, /js_1/assets/make-up-2x-17941236.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/make-up-fbcb2be5.jpg 1x, /js_1/assets/make-up-2x-17941236.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/make-up-fbcb2be5.jpg"
+                alt="cover-make-up"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/transforming-your-body-2d59559c.jpg 1x, /js_1/assets/transforming-your-body-2d59559c.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/transforming-your-body-2d59559c.jpg 1x, /js_1/assets/transforming-your-body-2d59559c.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/transforming-your-body-2d59559c.jpg"
+                alt="cover-transforming-your-body"
+                width="282"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="marquee__inner">
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/mimino-4a93c44d.jpg 1x, /js_1/assets/mimino-2x-32e1b76a.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/mimino-4a93c44d.jpg 1x, /js_1/assets/mimino-2x-32e1b76a.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/mimino-4a93c44d.jpg"
+                alt="cover-mimino"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/finances-masterfully-5806bd02.jpg 1x, /js_1/assets/finances-masterfully-2x-b135cb40.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/finances-masterfully-5806bd02.jpg 1x, /js_1/assets/finances-masterfully-2x-b135cb40.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/finances-masterfully-5806bd02.jpg"
+                alt="cover-finances-masterfully"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/fresh-box-3666c205.jpg 1x, /js_1/assets/fresh-box-2x-5983be8c.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/fresh-box-3666c205.jpg 1x, /js_1/assets/fresh-box-2x-5983be8c.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/fresh-box-3666c205.jpg"
+                alt="cover-fresh-box"
+                width="282"
+              />
+            </picture>
+          </a>
+          <a
+            class="marquee__line"
+            href="https://www.google.com/"
+            target="_blank"
+            ><picture>
+              <source
+                class="covers-image"
+                srcset="/js_1/assets/learning-english-2774939d.jpg 1x, /js_1/assets/learning-english-2x-f0346518.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/js_1/assets/learning-english-2774939d.jpg 1x, /js_1/assets/learning-english-2x-f0346518.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="covers-image"
+                src="/js_1/assets/learning-english-2774939d.jpg"
+                alt="cover-learning-english"
+                width="282"
+              />
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews" id="reviews">
+  <div class="reviews-wrapper container">
+    <h2 class="reviews-title">reviews</h2>
+
+    <div class="reviews-swiper swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+    </div>
+    <div class="buttons">
+      <button class="reviews-prev-btn" type="button">
+        <svg class="reviews-icon">
+          <use href="/js_1/assets/icons-8df51d6d.svg#icon-arrow-left" />
+        </svg>
+      </button>
+      <button class="reviews-next-btn" type="button">
+        <svg class="reviews-icon">
+          <use href="/js_1/assets/icons-8df51d6d.svg#icon-arrow-right" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="section footer_section" id="footer">
+  <div class="container footer_container">
+    <a class="title_footer" href="#header">
+      <img
+        class="img_footer"
+        src="/js_1/assets/foto_team_led-ff65f77c.jpg"
+        alt="foto_team_led"
+      />
+      <h2 class="title_footer">
+        LET`S<span class="title_work">&nbsp;WORK</span>
+      </h2>
+    </a>
+    <h2 class="title_footer">TOGETHER</h2>
+    <form class="form_footer js_form_footer" autocomplete="off">
+      <input
+        class="input_footer"
+        type="email"
+        name="email"
+        placeholder="clients@gmail.com"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+      />
+
+      <textarea
+        class="input_footer"
+        name="message"
+        placeholder="comments"
+        rows="1"
+      ></textarea>
+
+      <button class="btn_footer" type="submit">Send</button>
+    </form>
+    <ul class="address_footer">
+      <li class="link_footer">
+        <a href="email:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+      </li>
+      <li class="link_footer">
+        <a href="tel:+38 11 1111 11 11">+38 11 1111 11 11</a>
+      </li>
+    </ul>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal"></div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>
